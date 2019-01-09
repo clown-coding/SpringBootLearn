@@ -49,12 +49,6 @@
             <version>4.1.18</version>
         </dependency>
 
-        <!-- lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
         <!-- devtools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
