@@ -6,6 +6,9 @@
     <groupId>com.clown</groupId>
     <artifactId>SpringBootLearn</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>springboot-01-helloworld</module>
+    </modules>
     <packaging>pom</packaging>
 
     <!--使用maven创建springboot项目特有的方式-->

@@ -1,0 +1,7 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /springboot_helloworld
+spring:
+  application:
+    name: springboot-helloworld
