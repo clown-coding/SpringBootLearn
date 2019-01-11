@@ -6,8 +6,11 @@
 # ***微服务***
 * 2014  Martin Fowler 提出
 * 微服务是一种架构风格
+* ![什么是微服务](images/什么是微服务.png "什么是微服务")
 * **开发应用时,一个应用应该是一组小型服务,每一个小型服务运行在自己的进程内,应用之间可以通过Http的方式进行互通**
 * 单体应用: **ALL IN ONE**
+   * 优点:开发,测试,部署,扩展简单
+   * 缺点:修改单个应用,有可能会修改多个模块的功能,当软件需求过多,业务非常复杂,有可能牵一发而动全身
 
 ![单体应用](images/单体应用.png "单体应用")
 
@@ -18,6 +21,8 @@
 每一个功能元素都是一个可独立替换和独立升级的软件单元
 
 [详细参照Martin Fowler官网](https://martinfowler.com/articles/microservices.html#MicroservicesAndSoa)
+
+[微服务中文网](http://blog.cuicc.com/blog/2015/07/22/microservices/)
 
 微服务神经元
 
@@ -30,8 +35,7 @@
 # ***SpringBoot应用开发环境约束***
 * JDK1.8:       Spring Boot 推荐jdk1.7及以上
 * MAVEN3.X:     MAVEN 3.3 以上版本
-
-[IDEA使用教程](https://www.imooc.com/learn/924)
+* [IDEA使用教程](https://www.imooc.com/learn/924)
 
 # ***SpringBoot应用创建***
 
@@ -344,7 +348,7 @@ public String[] selectImports(AnnotationMetadata annotationMetadata) {
 ![7.png](images/7.png)
 
 * ***<font color=red size=5>Springboot启动的时候从类路径下的 MATE-INF/spring.factories中获取EnableAutoConfiguration指定的值
-将这些值作为自动配置类导入到容器中,自动配置类就生效了,自动配置类生效了,帮我们进行自动配置</font>***
+将这些值作为自动配置类导入到容器中,自动配置类生效了,帮我们进行自动配置</font>***
 
 以webmvcAutoconfiguration为例
 
@@ -359,6 +363,20 @@ public String[] selectImports(AnnotationMetadata annotationMetadata) {
 ![10.png](images/10.png)
 
 # ***<font color=red>J2EE一揽子解决方案</font>***
+
+#***SpringBoot工程结构***
+   * src
+      * main
+         * java
+         * resources
+            * static: 保存静态资源[js,css,image]
+            * templates:保存所有的模板页面[SpringBoot默认使用嵌入式的Tomcat,默认不支持JSP页面,可以使用Thymeleaf模板引擎]
+            * Springboot为什么不能使用JSP:
+               * 使用Jetty和Tomcat，如果使用war包装可以工作,jar包不支持JSP
+               * Undertow不支持JSP
+               * 创建自定义error.jsp页面不会覆盖错误处理的默认视图
+               * [详见Spring官网](https://docs.spring.io/spring-boot/docs/2.1.1.RELEASE/reference/htmlsingle/#boot-features-jsp-limitations)
+      * test
 
 
 
