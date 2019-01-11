@@ -376,6 +376,7 @@ public String[] selectImports(AnnotationMetadata annotationMetadata) {
                * Undertow不支持JSP
                * 创建自定义error.jsp页面不会覆盖错误处理的默认视图
                * [详见Spring官网](https://docs.spring.io/spring-boot/docs/2.1.1.RELEASE/reference/htmlsingle/#boot-features-jsp-limitations)
+            * application.yml(bootstrap.yml):springboot应用的配置文件,不使用默认配置,自定义配置信息
       * test
 
 
