@@ -1,7 +1,7 @@
 server:
   port: 9090
   servlet:
-    context-path: /springboot_helloworld
+    context-path: /springboot_listen
 spring:
   application:
-    name: springboot-helloworld
+    name: springboot-listen
