@@ -5,15 +5,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Author: clown
- * @Date: 2019/1/9
- */
+ * @author:  clown
+ * @date:    2019/1/10
+ **/
 @RestController
-@RequestMapping("/helloworld")
+@RequestMapping("/listen")
 public class HelloWorldController {
 
-    @GetMapping("/say")
-    public String say(){
+    @GetMapping("/listen")
+    public String listen(){
         return "clown is laughing at you...";
     }
 }
