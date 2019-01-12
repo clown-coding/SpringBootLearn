@@ -23,7 +23,7 @@ student:
   id: ${random.uuid}
   name: 铁蛋
   age: ${random.int}
-  grade: ${grade.name:蓝翔挖掘机大学三年二班}
+  grade: ${123:蓝翔挖掘机大学三年二班}
   dog:
     name: ${student.name}
     age: ${random.int(10)}

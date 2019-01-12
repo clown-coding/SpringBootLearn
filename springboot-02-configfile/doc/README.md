@@ -130,6 +130,9 @@
          ```yaml
          person: [Chinese,Japanese,American]
          ```
+         ```yaml
+         person: Chinese,Japanese,American
+         ```
 ### **读取YAML文件自定义参数**
 * 1.引入依赖
 ```yaml
