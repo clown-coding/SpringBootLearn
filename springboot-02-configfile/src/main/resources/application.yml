@@ -1,0 +1,21 @@
+person:
+  name: 张3
+  age: 12
+  boss: false
+  birthday: 1993/10/20
+  email: clown_coding@163.com
+  map:
+    k1: v1
+    k2: v2
+  list:
+    - 李4
+    - 王5
+  dog:
+    name: 旺财
+    age: 12
+people:
+  name: 王二麻子
+  list:
+    - Chinese
+    - Japanese
+    - American

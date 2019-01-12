@@ -8,6 +8,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springboot-01-helloworld</module>
+        <module>springboot-02-configfile</module>
     </modules>
     <packaging>pom</packaging>
 
