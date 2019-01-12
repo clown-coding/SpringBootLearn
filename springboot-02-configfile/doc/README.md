@@ -545,4 +545,74 @@ public class ConfigFileApplication {
               System.out.println("不存在");
           }
       ```
+## **配置文件占位符**
+* <font color=red size=6>**随机数**</font>
+   * 1.创建YMAL文件,添加自定义参数
+   ```ymal
+   person:
+     name: 张3
+     age: 12
+     boss: false
+     birthday: 1993/10/20
+     email: clown_coding@163.com
+     map:
+       k1: v1
+       k2: v2
+     list:
+       - 李4
+       - 王5
+     dog:
+       name: 旺财
+       age: 12
+   people:
+     name: 王二麻子
+     list:
+       - Chinese
+       - Japanese
+       - American
+   student:
+     id: ${random.uuid}
+     name: 铁蛋
+     age: ${random.int}
+     grade: ${grade.name:蓝翔挖掘机大学三年二班}
+     dog:
+       name: ${student.name}
+       age: ${random.int(10)}
+    ```
+    * 2.创建实体类
+    ```java
+    @Data
+    @Component
+    @ConfigurationProperties(prefix = "student")
+    public class Student {
+
+        private String id;
+        private String name;
+        private Integer age;
+        private String grade;
+        private Dog dog;
+    }
+   ```
+   * 3.创建测试
+   ```java
+   @RunWith(SpringJUnit4ClassRunner.class)
+   @SpringBootTest
+   public class StudentTest {
+
+       @Autowired
+       Student student;
+
+       @Test
+       public void studentTest(){
+           System.out.println(student);
+       }
+   }
+   ```
+   * 4.console打印结果
+
+   ![9.png](images/9.png)
+* <font color=red size=6>**占位符**</font>
+   * 占位符可以获取之前配置的值,如果没有可以使用冒号使用默认的值
+   * **grade: ${grade.name:蓝翔挖掘机大学三年二班}**
+
 # ***以上为SpringBoot全局配置文件的操作***
