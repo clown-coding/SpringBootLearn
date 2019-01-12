@@ -9,6 +9,7 @@
     <modules>
         <module>springboot-01-helloworld</module>
         <module>springboot-02-configfile</module>
+        <module>springboot-03-profile</module>
     </modules>
     <packaging>pom</packaging>
 
