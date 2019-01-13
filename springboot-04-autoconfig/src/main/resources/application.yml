@@ -1,0 +1,6 @@
+spring:
+  http:
+    encoding:
+      enabled: true
+      charset: utf-8    #utf8编码
+      force: true       #request与response都使用utf-8进行编码
