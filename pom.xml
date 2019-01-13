@@ -11,6 +11,7 @@
         <module>springboot-02-configfile</module>
         <module>springboot-03-profile</module>
         <module>springboot-04-autoconfig</module>
+        <module>springboot-05-logging</module>
     </modules>
     <packaging>pom</packaging>
 
