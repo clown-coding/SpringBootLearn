@@ -10,6 +10,7 @@
         <module>springboot-01-helloworld</module>
         <module>springboot-02-configfile</module>
         <module>springboot-03-profile</module>
+        <module>springboot-04-autoconfig</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -17,7 +18,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.1.RELEASE</version>
+        <version>2.0.8.RELEASE</version>
         <relativePath/>
     </parent>
 
