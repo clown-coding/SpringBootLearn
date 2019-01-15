@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>成功</title>
+</head>
+<body>
+    <h1>成功</h1>
+    <!-- 将div里面的文本内容设置为我们制定的值-->
+    <div id="div_01" class="class_01" th:id="${listen}" th:class="${listen}" th:text="${listen}"></div>
+    <hr/>
+    <div th:text="${listen}"></div>
+    <div th:utext="${listen}"></div>
+    <hr/>
+    <!-- th:each 写在哪一个标签上,每次遍历都会生成一个 5个h4-->
+    <h4 th:text="${user}" th:each="user:${userList}"></h4>
+    <hr/>
+    <h4>
+        <span th:each="user:${userList}">[[${user}]]</span>
+    </h4>
+</body>
+</html>
