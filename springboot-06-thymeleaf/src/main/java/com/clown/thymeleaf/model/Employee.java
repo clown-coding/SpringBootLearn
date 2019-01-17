@@ -16,10 +16,11 @@ public class Employee implements Serializable {
     private String lastName;
     private String email;
     /**
-     * 1 male, 0 female
+     * 1 男, 0 女
      */
     private Integer gender;
     private Integer departmentid;
     private Date birth;
+    private Department department;
 
 }
