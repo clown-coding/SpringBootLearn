@@ -447,6 +447,8 @@ public class ThymeleafProperties {
    * 如果有就用用户配置的
    * 如果没有才自动配置
    * 如果有些组件有多个,那么用户配置和默认的组合使用
+* 在SpringBoot中有非常多的XXXConfigurer帮助我们进行扩展配置
+* 在SpringBoot中会有很多的XXX的Customizer帮助我们进行定制配置
 
 # ***SpringBootWeb开发CRUD***
 
