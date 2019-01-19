@@ -14,6 +14,7 @@
         <module>springboot-05-logging</module>
         <module>springboot-06-thymeleaf</module>
         <module>springboot-07-servlet</module>
+        <module>springboot-08-jdbc</module>
     </modules>
     <packaging>pom</packaging>
 
