@@ -15,6 +15,7 @@
         <module>springboot-06-thymeleaf</module>
         <module>springboot-07-servlet</module>
         <module>springboot-08-jdbc</module>
+        <module>springboot-09-druid</module>
     </modules>
     <packaging>pom</packaging>
 
