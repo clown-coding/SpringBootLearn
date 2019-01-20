@@ -19,5 +19,5 @@ public interface EmployeeMapper {
 
     int update(Employee employee);
 
-    int deletById(Integer id);
+    int deleteById(Integer id);
 }

@@ -18,5 +18,5 @@ public interface EmployeeService {
 
     String update(Employee employee);
 
-    String deletById(Integer id);
+    String deleteById(Integer id);
 }

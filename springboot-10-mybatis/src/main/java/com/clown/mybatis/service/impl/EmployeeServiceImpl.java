@@ -57,8 +57,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public String deletById(Integer id) {
-        int row = employeeMapper.deletById(id);
+    public String deleteById(Integer id) {
+        int row = employeeMapper.deleteById(id);
         if (row <= 0) {
             return "删除失败";
         }
