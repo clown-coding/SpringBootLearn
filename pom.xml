@@ -16,6 +16,7 @@
         <module>springboot-07-servlet</module>
         <module>springboot-08-jdbc</module>
         <module>springboot-09-druid</module>
+        <module>springboot-10-mybatis</module>
     </modules>
     <packaging>pom</packaging>
 
