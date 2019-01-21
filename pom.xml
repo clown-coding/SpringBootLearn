@@ -19,6 +19,7 @@
         <module>springboot-10-mybatis</module>
         <module>springboot-11-jpa</module>
         <module>springboot-12-starter</module>
+        <module>springboot-13-custom-starter</module>
     </modules>
     <packaging>pom</packaging>
 
