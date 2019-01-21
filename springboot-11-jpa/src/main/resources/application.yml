@@ -6,7 +6,7 @@ spring:
     password: '123456'
     schema:
     - classpath:sql/springboot-jpa.sql
-    initialization-mode: always
+    initialization-mode: never
     type: com.alibaba.druid.pool.DruidDataSource #切换数据源为druid
     #数据源其他配置
     initialSize: 5                             #数据库连接池初始化连接个数
