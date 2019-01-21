@@ -20,6 +20,7 @@
         <module>springboot-11-jpa</module>
         <module>springboot-12-starter</module>
         <module>springboot-13-custom-starter</module>
+        <module>springboot-14-cache</module>
     </modules>
     <packaging>pom</packaging>
 
