@@ -5,6 +5,5 @@ spring:
     username: root
     password: '123456'
     schema:
-      - classpath:sql/department.sql
-      - classpath:sql/employee.sql
-    initialization-mode: never
+      - classpath:sql/springboot-jdbc.sql
+    initialization-mode: always
