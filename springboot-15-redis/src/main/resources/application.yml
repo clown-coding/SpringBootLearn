@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot-redis?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: '123456'
+    schema:
+    - classpath:sql/springboot-redis.sql
+    initialization-mode: never
+#redis配置
+  redis:
+    host: 192.168.25.145
+    port: 6379
+#mybatis配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.clown.redis.model
+  mapper-locations: classpath:mybatis/mapper/*.xml
+#logging配置
+logging:
+  level:
+    com.clown.redis.mapper: debug
