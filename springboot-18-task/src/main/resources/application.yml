@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot-task?seUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: '123456'
+#邮件发送的其它设置,如果不设置,出错,使用QQ的邮箱smtp协议就有问题,建议使用163的
+  mail:
+    username: clown_coding@163.com
+    password: ljy123852
+    host: smtp.163.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+#jpa设置
+  jpa:
+    database: mysql
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
