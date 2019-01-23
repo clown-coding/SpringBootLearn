@@ -23,6 +23,7 @@
         <module>springboot-14-cache</module>
         <module>springboot-15-redis</module>
         <module>springboot-16-rabbit</module>
+        <module>springboot-17-elasticsearch</module>
     </modules>
     <packaging>pom</packaging>
 
