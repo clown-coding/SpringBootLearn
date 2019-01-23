@@ -24,6 +24,7 @@
         <module>springboot-15-redis</module>
         <module>springboot-16-rabbit</module>
         <module>springboot-17-elasticsearch</module>
+        <module>springboot-18-task</module>
     </modules>
     <packaging>pom</packaging>
 
