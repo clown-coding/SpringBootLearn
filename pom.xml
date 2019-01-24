@@ -28,6 +28,7 @@
         <module>springboot-19-security</module>
         <module>springboot-20-shiro</module>
         <module>springboot-21-actuator</module>
+        <module>springboot-22-cloud</module>
     </modules>
     <packaging>pom</packaging>
 
