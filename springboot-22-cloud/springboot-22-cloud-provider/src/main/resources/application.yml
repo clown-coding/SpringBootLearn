@@ -1,0 +1,11 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: provider
+eureka:
+  instance:
+    prefer-ip-address: true     #注册服务时使用服务的ip地址进行注册
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/   #注册中心地址

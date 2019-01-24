@@ -1,0 +1,10 @@
+server:
+  port: 8888
+eureka:
+  instance:
+    hostname: eureka              #主机名称
+  client:
+    register-with-eureka: false   #是否将自己本身注册到注册中心,做集群式需要改为true
+    fetch-registry: false         #不从eureka上获取服务的注册信息
+    service-url:
+      defaultZone: http://localhost:8888/eureka/   #注册中心向外暴露ip
