@@ -27,6 +27,7 @@
         <module>springboot-18-task</module>
         <module>springboot-19-security</module>
         <module>springboot-20-shiro</module>
+        <module>springboot-21-actuator</module>
     </modules>
     <packaging>pom</packaging>
 
