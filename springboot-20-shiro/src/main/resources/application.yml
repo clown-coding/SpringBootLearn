@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: springboot-shiro
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot-shiro?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: "123456"
+    #以下设置为当程序启动后,会自动在数据库建立表 initialization-mode: always
+    schema:
+    - classpath:sql/springboot-shiro.sql
+    initialization-mode: always
+#mybatis配置
+mybatis:
+  type-aliases-package: com.clown.shiro.model
+#打印sql语句
+logging:
+  level:
+    com.clown.shiro.mapper: debug
