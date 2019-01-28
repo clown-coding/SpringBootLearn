@@ -1,0 +1,3566 @@
+{
+	"info": {
+		"_postman_id": "5a23e316-e06f-456f-b9dc-1d3957721c45",
+		"name": "SpringBootLearn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "springboot_mybatis",
+			"item": [
+				{
+					"name": "Department",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/department",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/department/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ADD",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"departmentName\":\"D-EE\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/department",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\": 5,\n    \"departmentName\": \"D-GG\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/department",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELATE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/department/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findByDepartmentName/ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/department/findByDepartmentName/D-AA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department",
+										"findByDepartmentName",
+										"D-AA"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Employee",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FindByLastName/ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/findByLastName?lastName=王二麻子",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"findByLastName"
+									],
+									"query": [
+										{
+											"key": "lastName",
+											"value": "王二麻子"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FindByDId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/findByDId/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"findByDId",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ADD",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"lastName\": \"clown\",\n    \"email\": \"852@163.com\",\n    \"gender\": 0,\n    \"did\": 2\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t \"id\": 1,\n    \"lastName\": \"张三\",\n    \"email\": \"哈哈@163.com\",\n    \"gender\": 1,\n    \"did\": 1\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8e27050b-6a5f-47c2-881e-ee240c7bceb4",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "8c1d4a7f-434a-4afc-b5ac-5f18a301f25f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "springboot的restful风格的crud",
+			"item": [
+				{
+					"name": "Hello world 测试",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:15018/hello/sayhello",
+							"host": [
+								"localhost"
+							],
+							"port": "15018",
+							"path": [
+								"hello",
+								"sayhello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "测试引入jQuery的jar包是否能够访问",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:15018/webjars/jquery/3.3.1/jquery.js",
+							"host": [
+								"localhost"
+							],
+							"port": "15018",
+							"path": [
+								"webjars",
+								"jquery",
+								"3.3.1",
+								"jquery.js"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "测试static目录下放入静态资源访问",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:15018/asserts/js/Chart.min.js",
+							"host": [
+								"localhost"
+							],
+							"port": "15018",
+							"path": [
+								"asserts",
+								"js",
+								"Chart.min.js"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "访问首页",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:15018/",
+							"host": [
+								"localhost"
+							],
+							"port": "15018",
+							"path": [
+								""
+							]
+						},
+						"description": "在resources先创建public文件夹,在在文件夹中添加index.html,index.html默认在/**目录下,所以能被访问到"
+					},
+					"response": []
+				},
+				{
+					"name": "success测试",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:15018/hello/success",
+							"host": [
+								"localhost"
+							],
+							"port": "15018",
+							"path": [
+								"hello",
+								"success"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "springboot_jdbc",
+			"item": [
+				{
+					"name": "查询department",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:15019/department/list",
+							"host": [
+								"localhost"
+							],
+							"port": "15019",
+							"path": [
+								"department",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/department/findAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/department/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"departmentName\": \"D-FF\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/department/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 6,\n    \"departmentName\": \"D-GG\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/department/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/department/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"department",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "测试自定义starter",
+			"item": [
+				{
+					"name": "测试自定义starter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:15022/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "15022",
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "springboot_cache",
+			"item": [
+				{
+					"name": "department",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/department",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/department/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SAVE",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"departmentName\": \"扫黄打非\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/department",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\":7,\n\t\"departmentName\": \"惩恶扬善\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/department",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/department/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findByDepartmentName/ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/department/findByDepartmentName/D-AA",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"department",
+										"findByDepartmentName",
+										"D-AA"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "employee",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/employee",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/employee/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SAVE",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"lastName\": \"clay\",\n    \"email\": \"147@163.com\",\n    \"gender\": \"1\",\n    \"did\": 4\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/employee",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/employee/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\": 4,\n    \"lastName\": \"赵6\",\n    \"email\": \"哈哈哈@123.com\",\n    \"gender\": 0,\n    \"did\": 4\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/employee",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FindByLastName/ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/findByLastName?lastName=王8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"findByLastName"
+									],
+									"query": [
+										{
+											"key": "lastName",
+											"value": "王8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FindByDId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/findByDId/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"findByDId",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/user",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/user/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ADD",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"田10\",\n    \"password\": \"123456\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/user",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\": 5,\n    \"username\": \"田七\",\n    \"password\": \"123852\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/user",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/user/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			],
+			"description": "springboo缓存整合测试"
+		},
+		{
+			"name": "springboot_rediscache",
+			"item": [
+				{
+					"name": "employee",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/employee",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/employee/6",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"employee",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SAVE",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"lastName\": \"诺克\",\n    \"email\": \"123789@163.com\",\n    \"gender\": \"0\",\n    \"did\": 3\n}"
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/employee",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"lastName\": \"托儿索\",\n    \"email\": \"147@163.com\",\n    \"gender\": \"0\",\n    \"did\": 4\n}"
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/employee/6",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"employee",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "根据员工lastName查询",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/employee/lastName?lastName=盖伦",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"employee",
+										"lastName"
+									],
+									"query": [
+										{
+											"key": "lastName",
+											"value": "盖伦"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/employee/6",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"employee",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "department",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/department",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/department/1",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"department",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SAVE",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"departmentName\":\"CC\"\n}"
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/department",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/department/6",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"department",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"departmentName\": \"真TM绝了\"\n}"
+								},
+								"url": {
+									"raw": "localhost:15024/springboot_rediscache/department/3",
+									"host": [
+										"localhost"
+									],
+									"port": "15024",
+									"path": [
+										"springboot_rediscache",
+										"department",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "springboot_amqp",
+			"item": [
+				{
+					"name": "用户发送短信验证码",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/user/sendSms/15764719456",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"sendSms",
+								"15764719456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "用户注册",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mobile\": \"15764719456\",\n    \"password\": \"LJY123852\",\n    \"nickname\": \"clown\",\n    \"sex\": \"1\",\n    \"email\": \"clown_coding@163.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/register/672159",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"register",
+								"672159"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "用户登录",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"mobile\":\"15764719456\",\n\t\"password\":\"LJY123852\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "springboot_task",
+			"item": [
+				{
+					"name": "异步请求",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:15025/springboot_task/async/sayHello",
+							"host": [
+								"localhost"
+							],
+							"port": "15025",
+							"path": [
+								"springboot_task",
+								"async",
+								"sayHello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "springboot_actuator",
+			"item": [
+				{
+					"name": "shutdown",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/shutdown",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"shutdown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "自定义健康信息",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:15029/actuator/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "15029",
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "beans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/beans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"beans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auditevents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/auditevents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"auditevents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "caches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/caches",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"caches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conditions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/conditions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"conditions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "configprops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/configprops",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"configprops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "env",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/env",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"env"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flyway",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/flyway",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"flyway"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "httptrace",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/httptrace",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"httptrace"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "integrationgraph",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/integrationgraph",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"integrationgraph"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loggers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/loggers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"loggers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "liquibase",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/liquibase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"liquibase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "metrics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/metrics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"metrics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mapping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/mapping",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"mapping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "scheduledtasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/scheduledtasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"scheduledtasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "session",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/session",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"session"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "threaddump",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/threaddump",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"threaddump"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "heapdump[不要使用Postman测试,浏览器直接打开]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/heapdump",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"heapdump"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "jolokia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/jolokia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"jolokia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/logfile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"logfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "prometheus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/actuator/prometheus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actuator",
+								"prometheus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改访问路径",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/management/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"management",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "springboot_shiro",
+			"item": [
+				{
+					"name": "Test",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1,\n\t\"username\":\"clown\",\n\t\"listen\":\"clown is laughing at you...\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/springboot_shiro/listen",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"springboot_shiro",
+								"listen"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "springboot_jap",
+			"item": [
+				{
+					"name": "Employee",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FindByLastName/ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/findByLastName?lastName=王二麻子",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"findByLastName"
+									],
+									"query": [
+										{
+											"key": "lastName",
+											"value": "王二麻子"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ADD",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"lastName\": \"joker\",\n    \"email\": \"joker@163.com\",\n    \"gender\": 0,\n    \"did\": 2\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"id\": 8,\n    \"lastName\": \"clown\",\n    \"email\": \"clown@163.com\",\n    \"gender\": 0,\n    \"did\": 2\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "springboot_elasticsearch",
+			"item": [
+				{
+					"name": "elasticsearch创建",
+					"item": [
+						{
+							"name": "创建索引",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch"
+									]
+								},
+								"description": "其实就是和数据库创建一个库是一样的,只不过名称不同"
+							},
+							"response": []
+						},
+						{
+							"name": "ADD",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"什么是微服务\",\n    \"content\": \"简单来说，微服务架构风格[1]是一种将一个单一应用程序开发为一组小型服务的方法，每个服务运行在自己的进程中，服务间通信采用轻量级通信机制(通常用HTTP资源API)。这些服务围绕业务能力构建并且可通过全自动部署机制独立部署。这些服务共用一个最小型的集中式的管理，服务可用不同的语言开发，使用不同的数据存储技术。\",\n    \"visits\":1000\n}"
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/article",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/article/_search",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"article",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/article/AWh5GEbnpIARG8mShVM8",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"article",
+										"AWh5GEbnpIARG8mShVM8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"SpringBootCORS 跨域实现\",\n    \"content\": \"服务端在OPTION请求的响应头中写入如下参数,告诉浏览器我允许这个请求跨域\",\n    \"visits\": 50\n}"
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/article/AWh5bwlC4apGC1tGcTu6",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"article",
+										"AWh5bwlC4apGC1tGcTu6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "基本匹配查询1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/article/_search?q=title:springboot",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"article",
+										"_search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "title:springboot"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/article/AWh5O7TlpIARG8mShVNB",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"article",
+										"AWh5O7TlpIARG8mShVNB"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "基本匹配查询2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/article/_search?q=visits:500",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"article",
+										"_search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "visits:500"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "基本匹配查询3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/article/_search?q=title:*spring*",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"article",
+										"_search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "title:*spring*"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "最小力度切分",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9200/_analyze?analyzer=ik_smart&pretty=true&text=我是程序员",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9200",
+									"path": [
+										"_analyze"
+									],
+									"query": [
+										{
+											"key": "analyzer",
+											"value": "ik_smart"
+										},
+										{
+											"key": "pretty",
+											"value": "true"
+										},
+										{
+											"key": "text",
+											"value": "我是程序员"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "最大力度拆分",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9200/_analyze?analyzer=ik_max_word&pretty=true&text=我是程序员",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9200",
+									"path": [
+										"_analyze"
+									],
+									"query": [
+										{
+											"key": "analyzer",
+											"value": "ik_max_word"
+										},
+										{
+											"key": "pretty",
+											"value": "true"
+										},
+										{
+											"key": "text",
+											"value": "我是程序员"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "不使用ik分词器切分",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9200/_analyze?analyzer=chinese&pretty=true&text=我是程序员",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9200",
+									"path": [
+										"_analyze"
+									],
+									"query": [
+										{
+											"key": "analyzer",
+											"value": "chinese"
+										},
+										{
+											"key": "pretty",
+											"value": "true"
+										},
+										{
+											"key": "text",
+											"value": "我是程序员"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "自定义词典 ",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9200/_analyze?analyzer=ik_smart&pretty=true&text=传智播客",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9200",
+									"path": [
+										"_analyze"
+									],
+									"query": [
+										{
+											"key": "analyzer",
+											"value": "ik_smart"
+										},
+										{
+											"key": "pretty",
+											"value": "true"
+										},
+										{
+											"key": "text",
+											"value": "传智播客"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "article",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9090/article",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9090",
+									"path": [
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9090/article/1070217204299075584",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9090",
+									"path": [
+										"article",
+										"1070217204299075584"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ADD",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"columnid\": \"1\",\n    \"title\": \"logstash安装并使用logstash-jdbc-input与mysql数据库同步\",\n    \"content\": \"1.安装logstash2.windows系统进行启动，输入命令3.配置logstash-jdbc-input面\",\n    \"image\": null,\n    \"ispublic\": \"0\",\n    \"istop\": \"0\",\n    \"visits\": 100,\n    \"thumbup\": 10,\n    \"comment\": 10,\n    \"state\": \"1\",\n    \"channelid\": \"1\",\n    \"url\": \"http://www.clown.com\",\n    \"type\": \"1\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9090/article",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9090",
+									"path": [
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"columnid\": \"1\",\n    \"userid\": null,\n    \"title\": \"springBoot的特性\",\n    \"content\": \"1.起步依赖2.自动配置3.监控程序状态4.命令行界面\",\n    \"image\": null,\n    \"createtime\": \"2019-01-23T07:50:04.000+0000\",\n    \"updatetime\": null,\n    \"ispublic\": \"0\",\n    \"istop\": \"0\",\n    \"visits\": 100,\n    \"thumbup\": 10,\n    \"comment\": 10,\n    \"state\": \"0\",\n    \"channelid\": \"1\",\n    \"url\": \"http://www.clown.com\",\n    \"type\": \"0\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:9090/article/1087980772297674752",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9090",
+									"path": [
+										"article",
+										"1087980772297674752"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9090/article/1087981264872542208",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9090",
+									"path": [
+										"article",
+										"1087981264872542208"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "search",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/article",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ADD",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"columnid\": \"1\",\n    \"title\": \"SpringBoot几种定时任务\",\n    \"content\": \"1.Timer：这是java自带的java.util.Timer类，这个类允许你调度一个java.util.TimerTask任务。使用这种方式可以让你的程序按照某一个频度执行，但不能在指定时间运行。一般用的较少,2.cheduledExecutorService：也jdk自带的一个类；是基于线程池设计的定时任务类,每个调度任务都会分配到线程池中的一个线程去执行,也就是说,任务是并发执行,互不影响,3.Spring Task：Spring3.0以后自带的task，可以将它看成一个轻量级的Quartz，而且使用起来比Quartz简单许多,4.Quartz：这是一个功能比较强大的的调度器，可以让你的程序在指定时间执行，也可以按照某一个频度执行，配置起来稍显复杂\",\n    \"state\": \"1\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/article",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/article/1087994356759138304",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"article",
+										"1087994356759138304"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "模糊查询[英文]",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/article/search/spring/1/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"article",
+										"search",
+										"spring",
+										"1",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"title\": \"SpringBootCORS 跨域实现\",\n    \"content\": \"服务端在OPTION请求的响应头中写入如下参数,告诉浏览器我允许这个请求跨域\",\n    \"state\": \"1\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/article/AWh5bwlC4apGC1tGcTu6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"article",
+										"AWh5bwlC4apGC1tGcTu6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/article/AWh5bwlC4apGC1tGcTu6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"article",
+										"AWh5bwlC4apGC1tGcTu6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "模糊查询[中文]",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/article/search/%E5%85%A8%E5%AE%B6%E6%A1%B6/1/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"article",
+										"search",
+										"%E5%85%A8%E5%AE%B6%E6%A1%B6",
+										"1",
+										"6"
+									]
+								},
+								"description": "http://localhost:8080/article/search/%E5%85%A8%E5%AE%B6%E6%A1%B6/1/6\nhttp://localhost:8080/article/search/全家桶/1/6\n进行中文查询时需转义"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "employee",
+					"item": [
+						{
+							"name": "ALL",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/employee/_search",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"employee",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ONE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/employee/_search?q=last_name:Smith",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"employee",
+										"_search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "last_name:Smith"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "表达式搜索",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"query\" : {\n        \"match\" : {\n            \"last_name\" : \"Smith\"\n        }\n    }\n}"
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/employee/_search",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"employee",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "更复杂的查询",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\" : {\r\n        \"bool\": {\r\n            \"must\": {\r\n                \"match\" : {\r\n                    \"last_name\" : \"smith\" \r\n                }\r\n            },\r\n            \"filter\": {\r\n                \"range\" : {\r\n                    \"age\" : { \"gt\" : 30 } \r\n                }\r\n            }\r\n        }\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/employee/_search",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"employee",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "全文检索",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\" : {\r\n        \"match\" : {\r\n            \"about\" : \"rock climbing\"\r\n        }\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/employee/_search",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"employee",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "完全匹配",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\" : {\r\n        \"match_phrase\" : {\r\n            \"about\" : \"rock climbing\"\r\n        }\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/employee/_search",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"employee",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "高亮搜索",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"query\" : {\r\n        \"match_phrase\" : {\r\n            \"about\" : \"rock climbing\"\r\n        }\r\n    },\r\n    \"highlight\": {\r\n        \"fields\" : {\r\n            \"about\" : {}\r\n        }\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "localhost:9200/springboot_elasticsearch/employee/_search",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"springboot_elasticsearch",
+										"employee",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "springboot_task",
+			"item": [
+				{
+					"name": "ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 6,\n    \"username\": \"王8\",\n    \"password\": \"456789\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/user/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "发送邮件",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/user/mail",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"mail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "springboot与mybatis集成测试事务",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": \"4\",\n        \"name\": \"LJY\",\n        \"password\": \"123\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:12001/springboot-mybatis/user/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12001",
+					"path": [
+						"springboot-mybatis",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "测试redis缓存穿透",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:12003/springboot-redis/user/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12003",
+					"path": [
+						"springboot-redis",
+						"user",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "b17ee4f9-80e6-448a-a6fc-8bc3c070fdb9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "762741a2-2d62-48f0-b4fa-89a58ad11488",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
