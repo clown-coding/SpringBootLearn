@@ -29,7 +29,7 @@
         <module>springboot-20-shiro</module>
         <module>springboot-21-actuator</module>
         <module>springboot-22-cloud</module>
-        <module>springboot-23-mybatisplus</module>
+        <module>springboot-23-mp</module>
     </modules>
     <packaging>pom</packaging>
 
